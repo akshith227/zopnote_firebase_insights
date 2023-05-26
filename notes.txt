@@ -1,0 +1,29 @@
+Data structure:
+
+Merchants collection
+
+  Merchant
+
+    Docs 
+      areaList (areas covered, string list)
+      ownerName and name
+      productList
+
+    Collections
+
+      CUSTOMERS -> has every customer this merchant has ever serviced.
+        customer
+          address line (for delivery)
+          name
+          phone number
+          unique id
+
+      INVOICES
+        customer reference -> customer collection
+        invoice id
+        INVOICE AMOUNT (rupees)
+        invoice items (item sold) -> refers by name, not id
+        invoice date
+        STATUS: PAID/NOT PAID
+
+
